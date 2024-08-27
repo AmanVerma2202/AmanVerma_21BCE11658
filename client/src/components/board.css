@@ -1,0 +1,185 @@
+.board-container {
+    padding: 2px;
+    display: grid;
+    grid-template-columns: repeat(5, 80px); /* Increased size of the boxes */
+    grid-gap: 5px;
+    margin: 20px auto;
+    border: 3px solid #333; /* Thicker border around the board */
+    width: max-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow for a more realistic look */
+}
+
+.board-cell {
+    width: 80px;
+    height: 80px; /* Increased size of the cells */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none; /* Removed border for a cleaner look */
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    background: linear-gradient(145deg, #e6e6e6, #ffffff); /* Light gradient for 3D look */
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.15), inset -5px -5px 10px rgba(255, 255, 255, 0.7); /* Inset shadow for depth */
+}
+
+.board-cell.gray {
+    background: linear-gradient(145deg, #b8b8b8, #d4d4d4); /* Gradient for gray cells */
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+}
+
+.board-cell.black {
+    background: linear-gradient(145deg, #4a4a4a, #5e5e5e); /* Gradient for black cells */
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3), inset -5px -5px 10px rgba(255, 255, 255, 0.2);
+}
+
+.board-cell:hover {
+    background-color: #e0e0e0; /* Slightly lighter background on hover */
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.6); /* Subtle change for hover */
+}
+
+.selected-cell {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid green; /* Thicker border for the selected cell */
+    box-sizing: border-box;
+    pointer-events: none; /* Disable click events for the border */
+    z-index: 1;
+}
+
+.cell-content {
+    position: absolute;
+    color: inherit; /* The color will be set dynamically */
+    font-weight: bold;
+    font-size: 30px; /* Increased font size for better visibility */
+    z-index: 2; /* Ensure the content is above the cell */
+}
+
+
+
+.error-message {
+    color: red;
+    text-align: center; /* Center align error messages */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* Highlight suggested moves */
+.board-cell.suggestion {
+    background-color: rgba(0, 255, 0, 0.3); /* Greenish background for suggested moves */
+}
+  
+/* Optional: You can customize the appearance of the suggestion further */
+.board-cell.suggestion:hover {
+    background-color: rgba(0, 255, 0, 0.5); /* Darker green on hover */
+}
+  
+
+
+
+
+/* Wrapper for the entire board component */
+.board-wrapper {
+  text-align: center;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  color: #fff; /* White text color */
+  padding: 20px;
+  border-radius: 8px;
+  }
+  
+  /* Title displaying current turn */
+  .current-turn {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  /* Container for the board, with padding and box shadow */
+  .board-container {
+    padding: 2px;
+    display: grid;
+    grid-template-columns: repeat(5, 80px); /* Increased size of the boxes */
+    grid-gap: 5px;
+    margin: 20px auto;
+    border: 3px solid #333; /* Thicker border around the board */
+    width: max-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for a realistic look */
+    border-radius: 8px; /* Rounded corners for the board */
+  }
+  
+  /* Styling for each board cell */
+  .board-cell {
+    width: 80px;
+    height: 80px; /* Increased size of the cells */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none; /* Removed border for a cleaner look */
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    background: linear-gradient(145deg, #e6e6e6, #ffffff); /* Light gradient for 3D look */
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.15), inset -5px -5px 10px rgba(255, 255, 255, 0.7); /* Inset shadow for depth */
+    border-radius: 4px; /* Rounded corners for cells */
+  }
+  
+  /* Specific styling for gray cells */
+  .board-cell.gray {
+    background: linear-gradient(145deg, #b8b8b8, #d4d4d4); /* Gradient for gray cells */
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Specific styling for black cells */
+  .board-cell.black {
+    background: linear-gradient(145deg, #4a4a4a, #5e5e5e); /* Gradient for black cells */
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3), inset -5px -5px 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Hover effect for cells */
+  .board-cell:hover {
+    background-color: #e0e0e0; /* Slightly lighter background on hover */
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.6); /* Subtle change for hover */
+  }
+  
+  /* Styling for the selected cell */
+  .selected-cell {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid green; /* Thicker border for the selected cell */
+    box-sizing: border-box;
+    pointer-events: none; /* Disable click events for the border */
+    z-index: 1;
+    border-radius: 4px; /* Rounded corners to match cell style */
+  }
+  
+  /* Styling for cell content */
+  .cell-content {
+    position: relative;
+    color: inherit; /* The color will be set dynamically */
+    font-weight: bold;
+    font-size: 30px; /* Increased font size for better visibility */
+    z-index: 2; /* Ensure the content is above the cell */
+  }
+  
+  /* Highlight suggested moves */
+  .board-cell.suggestion {
+    background-color: rgba(0, 255, 0, 0.3); /* Greenish background for suggested moves */
+    border-radius: 4px; /* Rounded corners to match cell style */
+  }
+  
+  /* Darker green on hover for suggested moves */
+  .board-cell.suggestion:hover {
+    background-color: rgba(0, 255, 0, 0.5); /* Darker green on hover */
+  }
+  
