@@ -29,8 +29,8 @@ This project implements a unique twist on traditional chess, featuring a smaller
 ![Alt text of the image](https://github.com/AmanVerma2202/AmanVerma_21BCE11658/blob/main/Screenshot%20(450).png)
 ![Alt text of the image](https://github.com/AmanVerma2202/AmanVerma_21BCE11658/blob/main/Screenshot%20(451).png)
 
-## How to Run Locally
 
+## How to Run Locally
 Clone the repository:
 
    ```bash
@@ -50,17 +50,8 @@ npm install
 npm run dev 
 ```
 
-## Demo
-
-
-
-## Photos
-
-
 
 ## Tech Stack
-
- 
 **Backend:** Node.js, Express, Socket.io
 **Frontend:** React, Vite
 **Database:** No database required (in-memory state management)
