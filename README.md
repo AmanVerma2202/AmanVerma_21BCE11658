@@ -16,6 +16,18 @@ This project implements a unique twist on traditional chess, featuring a smaller
 -**Game Over Screen:** Displays the winner when the game ends.<br/>
 
 
+## Screenshots
+![Alt text of the image](https://github.com/AmanVerma2202/AmanVerma_21BCE11658/blob/main/Screenshot%20(441).png)
+![Alt text of the image](https://github.com/AmanVerma2202/AmanVerma_21BCE11658/blob/main/Screenshot%20(442).png)
+![Alt text of the image](https://github.com/AmanVerma2202/AmanVerma_21BCE11658/blob/main/Screenshot%20(443).png)
+![Alt text of the image](https://github.com/AmanVerma2202/AmanVerma_21BCE11658/blob/main/Screenshot%20(444).png)
+![Alt text of the image](https://github.com/AmanVerma2202/AmanVerma_21BCE11658/blob/main/Screenshot%20(445).png)
+![Alt text of the image](https://github.com/AmanVerma2202/AmanVerma_21BCE11658/blob/main/Screenshot%20(446).png)
+![Alt text of the image](https://github.com/AmanVerma2202/AmanVerma_21BCE11658/blob/main/Screenshot%20(447).png)
+![Alt text of the image](https://github.com/AmanVerma2202/AmanVerma_21BCE11658/blob/main/Screenshot%20(448).png)
+![Alt text of the image](https://github.com/AmanVerma2202/AmanVerma_21BCE11658/blob/main/Screenshot%20(449).png)
+![Alt text of the image](https://github.com/AmanVerma2202/AmanVerma_21BCE11658/blob/main/Screenshot%20(450).png)
+![Alt text of the image](https://github.com/AmanVerma2202/AmanVerma_21BCE11658/blob/main/Screenshot%20(451).png)
 
 ## How to Run Locally
 
