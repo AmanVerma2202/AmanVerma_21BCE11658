@@ -22,8 +22,8 @@ This project implements a unique twist on traditional chess, featuring a smaller
 Clone the repository:
 
    ```bash
-   git clone https://github.com/AmanVerma2202/AmanVerma21BCE11658.git
-   cd AmanVerma21BCE11658
+   git clone https://github.com/AmanVerma2202/AmanVerma_21BCE11658.git
+   cd AmanVerma_21BCE11658
  ```
 **for server**
 ```
@@ -56,10 +56,10 @@ npm run dev
 
 
 ## Usage
--Open the application in your browser. The React app should be visible.
--Connect as Player 1 or Player 2 and choose your characters.
--Play the game by making moves on the board. The game state will update in real-time.
--Review the move history and observe the game-over screen when applicable.
+-Open the application in your browser. The React app should be visible.<br/>
+-Connect as Player 1 or Player 2 and choose your characters.<br/>
+-Play the game by making moves on the board. The game state will update in real-time.<br/>
+-Review the move history and observe the game-over screen when applicable.<br/>
 
 
 ## Contributing
@@ -73,8 +73,7 @@ Push to the branch (git push origin feature-branch).
 Create a new Pull Request.
 ```
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+
 
 ## Contact
 If you have any questions or need further information, feel free to contact me:
